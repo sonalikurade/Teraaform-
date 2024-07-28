@@ -98,9 +98,13 @@ output "public_ip" {
 Terraform uses a state file to keep track of the resources it manages. This state file is crucial for understanding the current state of your infrastructure and applying changes correctly. It is recommended to store the state file remotely to enable team collaboration and maintain security.
 
 Configuring Remote State with AWS S3
-
+```
 hcl
+```
+```
 Copy code
+```
+```
 terraform {
   backend "s3" {
     bucket = "my-terraform-state"
@@ -108,4 +112,5 @@ terraform {
     region = "us-west-2"
   }
 }
-Conclusion
+```
+## Conclusion
